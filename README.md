@@ -12,6 +12,10 @@ which will provide a transcript of the audio signal recorded on the client-side 
 * [Complete Service API Reference](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/speech-to-text/api/v1/)
 * [References on Speech Recognition](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/speech-to-text/science.shtml)
 
+**Screenshot:**
+
+![Demo Application](private/demo-screen.jpg)
+
 ## Authentication
 
 The authentication happens on the server side. The credentials to the Watson Speech-to-Text service should be
