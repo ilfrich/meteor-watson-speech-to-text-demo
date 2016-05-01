@@ -1,0 +1,31 @@
+<head>
+  	<title>Speech to Text Demo</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+
+<body>
+	{{> demo}}
+	{{> sAlert}}
+</body>
+
+<template name="demo">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Speech to Text Demo</h1>
+				<button class="btn btn-primary" disabled="disabled" id="speech"><span class="fa fa-microphone"></span></button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<label for="text">Content</label>
+				<textarea id="text" class="form-control">{{transcript}}{{currentSentence}}</textarea>
+			</div>
+		</div>
+	</div>
+
+</template>
