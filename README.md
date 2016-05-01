@@ -6,6 +6,12 @@ In order to use the Watson Speech-to-Text service, you need an [IBM BlueMix](htt
 service can be provisioned from within the administrative interface. The MeteorJS app will then connect to this service,
 which will provide a transcript of the audio signal recorded on the client-side using your devices microphone.
 
+**More information about the service and the programming API can be found here:**
+
+* [WebSocket Interface / Response Message Description](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/speech-to-text/websockets.shtml)
+* [Complete Service API Reference](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/speech-to-text/api/v1/)
+* [References on Speech Recognition](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/speech-to-text/science.shtml)
+
 ## Authentication
 
 The authentication happens on the server side. The credentials to the Watson Speech-to-Text service should be
@@ -85,6 +91,12 @@ mic.stop();
 
 The `authToken` needs to be retrieved from the server side (see [Authentication](#authentication)).
 The last callback of the `handleMicrophone` function is invoked once the socket connection is established.
+
+The `model` parameter defines, which language you want to use. A list of all available models can be found
+[here](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/speech-to-text/api/v1/#get_model). It is
+recommended to use the `BroadbandModel`.
+
+
 The `messageCallback` is invoked with one parameter (`msg`), which is the JSON object de-serialised from the
 incoming data from the socket, if it is not an error message.
 
