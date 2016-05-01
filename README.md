@@ -132,4 +132,4 @@ The `msg` parameter in `messageCallback(msg)` has the following structure:
 
 The `final` flag indicates, whether the sentence is finished. All `Percentage` are provided as number between 0.00 (0%)
 and 1.00 (100%). The timestamps are provided as number of seconds till the start of the recording / transcript. Keys in
-brackets (e.g. `(word_alternatives)` are optional).
+brackets - e.g. `(word_alternatives)` are optional.
